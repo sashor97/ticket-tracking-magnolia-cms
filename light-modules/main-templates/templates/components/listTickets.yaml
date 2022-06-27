@@ -1,0 +1,3 @@
+templateScript: /main-templates/templates/components/listTickets.ftl
+title: List ticket component
+renderType: freemarker

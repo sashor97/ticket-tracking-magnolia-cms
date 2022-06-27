@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" sv:name="rest-endpoints">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>mgnl:content</sv:value>
+  </sv:property>
+  <sv:node sv:name="nodes">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="class" sv:type="String">
+      <sv:value>info.magnolia.rest.service.node.definition.ConfiguredNodeEndpointDefinition</sv:value>
+    </sv:property>
+    <sv:property sv:name="implementationClass" sv:type="String">
+      <sv:value>info.magnolia.rest.service.node.v1.NodeEndpoint</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="ticket">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="class" sv:type="String">
+      <sv:value>info.magnolia.rest.service.node.definition.ConfiguredNodeEndpointDefinition</sv:value>
+    </sv:property>
+    <sv:property sv:name="implementationClass" sv:type="String">
+      <sv:value>com.todo.ws.core.endpoints.TicketEndpoint</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="commands">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="class" sv:type="String">
+      <sv:value>info.magnolia.rest.service.command.definition.ConfiguredCommandEndpointDefinition</sv:value>
+    </sv:property>
+    <sv:property sv:name="enabled" sv:type="Boolean">
+      <sv:value>true</sv:value>
+    </sv:property>
+    <sv:property sv:name="implementationClass" sv:type="String">
+      <sv:value>info.magnolia.rest.service.command.v2.CommandEndpoint</sv:value>
+    </sv:property>
+    <sv:node sv:name="enabledCommands">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>mgnl:contentNode</sv:value>
+      </sv:property>
+      <sv:node sv:name="activate">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="catalogName" sv:type="String">
+          <sv:value>website</sv:value>
+        </sv:property>
+        <sv:property sv:name="commandName" sv:type="String">
+          <sv:value>activate</sv:value>
+        </sv:property>
+        <sv:node sv:name="access">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:node sv:name="roles">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="rest" sv:type="String">
+              <sv:value>rest-editor</sv:value>
+            </sv:property>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+      <sv:node sv:name="markAsDeleted">
+        <sv:property sv:name="jcr:primaryType" sv:type="Name">
+          <sv:value>mgnl:contentNode</sv:value>
+        </sv:property>
+        <sv:property sv:name="commandName" sv:type="String">
+          <sv:value>markAsDeleted</sv:value>
+        </sv:property>
+        <sv:node sv:name="access">
+          <sv:property sv:name="jcr:primaryType" sv:type="Name">
+            <sv:value>mgnl:contentNode</sv:value>
+          </sv:property>
+          <sv:node sv:name="roles">
+            <sv:property sv:name="jcr:primaryType" sv:type="Name">
+              <sv:value>mgnl:contentNode</sv:value>
+            </sv:property>
+            <sv:property sv:name="rest" sv:type="String">
+              <sv:value>rest-editor</sv:value>
+            </sv:property>
+          </sv:node>
+        </sv:node>
+      </sv:node>
+    </sv:node>
+  </sv:node>
+  <sv:node sv:name="properties">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>mgnl:contentNode</sv:value>
+    </sv:property>
+    <sv:property sv:name="class" sv:type="String">
+      <sv:value>info.magnolia.rest.service.property.definition.ConfiguredPropertyEndpointDefinition</sv:value>
+    </sv:property>
+    <sv:property sv:name="implementationClass" sv:type="String">
+      <sv:value>info.magnolia.rest.service.property.v1.PropertyEndpoint</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>
+

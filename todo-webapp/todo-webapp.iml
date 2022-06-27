@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+          <root url="file://$MODULE_DIR$/overlays/info.magnolia.magnolia-empty-webapp-6.2.15" relative="/" />
+          <root url="file://$MODULE_DIR$/overlays/info.magnolia.bundle.magnolia-community-webapp-6.2.15" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
+</module>

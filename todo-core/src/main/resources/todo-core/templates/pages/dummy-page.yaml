@@ -1,0 +1,10 @@
+templateScript: /todo-core/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: todo-core:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: todo-core:components/dummy-component

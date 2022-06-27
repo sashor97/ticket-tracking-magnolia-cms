@@ -1,0 +1,4 @@
+# Project exclude paths
+/light-modules/main-templates/node_modules/
+/todo-core/target/
+/todo-webapp/target/

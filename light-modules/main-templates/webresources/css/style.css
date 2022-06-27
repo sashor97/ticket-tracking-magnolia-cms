@@ -1,0 +1,48 @@
+#addTicketButton:hover{
+    opacity: 0.7;
+    cursor:pointer;
+}
+#demo .img{
+
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+#demo .text-shadow{
+    display: flex ;
+    justify-content: center;
+
+    padding-bottom: 10%;
+    position: relative;
+
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+#demo .list-item{
+    display: inline-block;
+    text-align: center;
+    background: #3639E2;
+    background: -webkit-linear-gradient(top right, #3639E2, #BC31EB);
+    background: -moz-linear-gradient(top right, #3639E2, #BC31EB);
+    background: linear-gradient(to bottom left, #3639E2, #BC31EB);
+    color: white;
+    padding-top: 20px;
+    width: 280px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 40px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 6px 25px -5px black;
+    margin-left: 5%;
+}
+#demo .list-item:hover{
+    transition: 0.5s;
+    transform: translateY(-5%);
+    background-image: linear-gradient(to bottom left, #1466ab,#5c008d, #0e0233);
+}
+#demo .text-danger,.text-primary,.text-warning{
+    font-size: 20px;
+}

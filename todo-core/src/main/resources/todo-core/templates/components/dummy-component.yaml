@@ -1,0 +1,2 @@
+templateScript: /todo-core/templates/components/dummy-component.ftl
+renderType: freemarker

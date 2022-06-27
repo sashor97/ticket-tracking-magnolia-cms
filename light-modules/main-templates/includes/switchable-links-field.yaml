@@ -1,0 +1,52 @@
+name: linkType
+class: info.magnolia.ui.form.field.definition.SwitchableFieldDefinition
+required: true
+selectionType: select
+type: String
+i18n: true
+label: Select link type
+options:
+  - name: internal
+    selected: true
+    value: internal
+    label: Internal
+  - name: external
+    selected: false
+    label: External
+    value: external
+  - name: download
+    selected: false
+    label: Download
+    value: download
+
+fields:
+  - name: internal
+    label: Internal
+    class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+    targetWorkspace: website
+    appName: pages
+    identifierToPathConverter:
+      class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+    type: String
+    required: false
+    description:
+    i18n: true
+  - name: external
+    label: External
+    class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+    type: String
+    required: false
+    i18n: true
+  - name: download
+    label: Download
+    class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+    targetWorkspace: dam
+    targetTreeRootPath: /
+    appName: assets
+    identifierToPathConverter:
+      class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+    contentPreviewDefinition:
+      contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+    type: String
+    required: false
+    i18n: true

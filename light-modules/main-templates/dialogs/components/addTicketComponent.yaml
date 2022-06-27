@@ -1,0 +1,36 @@
+label: Add ticket dialog
+form:
+  properties:
+    title:
+      $type: textField
+      label: Title of add form
+    button:
+      $type: textField
+      label: Button text
+    addPrioriteties:
+      $type: jcrMultiValueField
+      label: Add priorities
+      field:
+        $type: textField
+        label: Enter priority
+    componentId:
+      !include:/main-templates/includes/controls/componentId.yaml
+  layout:
+    $type: tabbedLayout
+    tabs:
+      tabText:
+        label: Main
+        fields:
+          - name: title
+          - name: button
+          - name: addPrioriteties
+      tabCss:
+        !include:/main-templates/includes/tabs/tabCss.yaml
+
+#actions:
+#  commit:
+#    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+#  cancel:
+#    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+
+

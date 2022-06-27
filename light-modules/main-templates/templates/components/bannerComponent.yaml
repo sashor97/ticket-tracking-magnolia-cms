@@ -1,0 +1,4 @@
+templateScript: /main-templates/templates/components/bannerComponent.ftl
+title: Banner component
+renderType: freemarker
+dialog: main-templates:components/bannerComponent

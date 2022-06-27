@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>todo-core</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <class>com.todo.ws.core.TodoCore</class>
+  <versionHandler>com.todo.ws.core.setup.TodoCoreVersionHandler</versionHandler>
+  <version>${project.version}</version>
+
+  <!-- For more information on module descriptor configuration options -->
+  <!-- https://documentation.magnolia-cms.com/display/DOCS/XML-based+module+descriptor -->
+  <components>
+    <id>main</id>
+    <component>
+      <type>com.todo.ws.core.TodoTemplatingFunctions</type>
+      <implementation>com.todo.ws.core.TodoTemplatingFunctions</implementation>
+      <scope>singleton</scope>
+    </component>
+  </components>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>*</version>
+    </dependency>
+    <dependency>
+      <name>core</name>
+      <version>6.2/*</version>
+    </dependency>
+    <dependency>
+      <name>ui-admincentral</name>
+      <version>6.2/*</version>
+    </dependency>
+    <dependency>
+      <name>dam-app-jcr</name>
+      <version>3/*</version>
+    </dependency>
+    <!--  Add other dependencies here, e.g the mte (magnolia templating essentials).
+    <dependency>
+      <name>mte</name>
+      <version>0.7/*</version>
+    </dependency>
+    -->
+  </dependencies>
+  <repositories>
+    <repository>
+      <name>magnolia</name>
+      <workspaces>
+        <workspace>ticket</workspace>
+      </workspaces>
+      <nodeTypeFile>/mgnl-nodetypes/magnolia-todo-nodetypes.xml</nodeTypeFile>
+    </repository>
+  </repositories>
+</module>

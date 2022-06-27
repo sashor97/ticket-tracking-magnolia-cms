@@ -1,0 +1,20 @@
+templateScript: /main-templates/templates/pages/main.ftl
+dialog: main-templates:pages/home
+title: Main template
+renderType: site
+type: home
+areas:
+  main:
+    templateScript: /main-templates/templates/components/content.ftl
+    type: list
+    renderType: freemarker
+    availableComponents:
+      bannerComponent:
+        id: main-templates:components/bannerComponent
+      addTicketComponent:
+        id: main-templates:components/addTicketComponent
+      listTickets:
+        id: main-templates:components/listTickets
+
+
+

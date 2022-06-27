@@ -1,0 +1,30 @@
+datasource:
+  workspace: ticket
+  autoCreate: true
+model:
+  nodeType: mgnl:Ticket
+  properties:
+    ticketName:
+      type: String
+      required: true
+    ticketDescription:
+      type: String
+      required: true
+    prority:
+      required: true
+      options:
+        low:
+          value: low
+          label: Low
+        medium:
+          value: medium
+          label: Medium
+        high:
+          value: high
+          label: High
+    completed:
+      required: true
+      $type: checkBoxField
+      label: "Completed"
+      defaultValue: true
+
