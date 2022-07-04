@@ -29,14 +29,19 @@
                         <label class="col-form-label" for="addTicketDescription">Enter ticket description</label>
                         <textarea class="form-control" name="description" id="addTicketDescription" cols="40" rows="4"></textarea>
                     </div>
+                    <p>
+
+                    </p>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select priority
                         </button>
                         <ul class="dropdown-menu" id="dropDownPriority" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" >LOW</a></li>
-                            <li><a class="dropdown-item" >MEDIUM</a></li>
-                            <li><a class="dropdown-item">HIGH</a></li>
+                            [#if selectPriorities?has_content]
+                                [#list selectPriorities as priority]
+                                    <li><a class="dropdown-item text-uppercase">${priority!}</a></li>
+                                [/#list]
+                            [/#if]
                         </ul>
                     </div>
                     <div class="modal-footer">
