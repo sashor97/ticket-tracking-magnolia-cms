@@ -1,0 +1,48 @@
+'main':
+  'jcr:mixinTypes': ['mgnl:hasVersion']
+  'jcr:primaryType': 'mgnl:page'
+  'jcr:uuid': 'e69d6d34-c9ea-4862-8c1e-eb0e5db7c86a'
+  'mgnl:activationStatus': true
+  'mgnl:created': 2022-06-15T23:26:30.891+02:00
+  'mgnl:createdBy': 'superuser'
+  'mgnl:lastActivated': 2022-06-27T10:09:40.271+02:00
+  'mgnl:lastActivatedBy': 'superuser'
+  'mgnl:lastActivatedVersion': '1.0'
+  'mgnl:lastActivatedVersionCreated': 2022-06-25T00:15:35.568+02:00
+  'mgnl:lastModified': 2022-07-04T12:23:13.745+02:00
+  'mgnl:lastModifiedBy': 'superuser'
+  'mgnl:template': 'main-templates:pages/main-template'
+  'title': 'main'
+  'main':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': 'ca63f542-3316-4729-9ab7-cfa32dd23f56'
+    'mgnl:activationStatus': true
+    'mgnl:created': 2022-06-15T23:26:39.880+02:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastActivated': 2022-06-27T10:09:40.271+02:00
+    'mgnl:lastActivatedBy': 'superuser'
+    'mgnl:lastModified': 2022-07-04T12:23:13.745+02:00
+    'mgnl:lastModifiedBy': 'superuser'
+    '00':
+      'addPrioriteties': ['low', 'medium', 'high']
+      'button': 'Add ticket'
+      'componentId': 'addTicket'
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '0fb4f024-2d9d-41e8-86f8-e3c477fa08d6'
+      'mgnl:created': 2022-07-04T12:23:34.997+02:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastModified': 2022-07-04T12:23:34.997+02:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'main-templates:components/addTicketComponent'
+      'title': 'Add ticket'
+    '0':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '35377f57-df76-406a-9320-d6637885b7df'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2022-06-24T11:43:43.184+02:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2022-06-27T10:09:40.271+02:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:lastModified': 2022-06-24T11:43:43.184+02:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'main-templates:components/listTickets'
