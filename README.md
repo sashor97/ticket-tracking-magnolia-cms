@@ -1,7 +1,7 @@
 # todo-application
 
 Todo Application with Magnolia DX edition (known as enterprise before v6)
-
+![alt text](application-todo.png)
 
 ### With magnolia
 
