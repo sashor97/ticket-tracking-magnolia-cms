@@ -77,8 +77,9 @@
 
 
 <!-- Header -->
-
+[@cms.area name = "navigation"/]
 [@cms.area name = "main"/]
+[@cms.area name = "loginArea"/]
 
 <!-- About -->
 

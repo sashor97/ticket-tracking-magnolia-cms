@@ -11,6 +11,8 @@
     <magnoliaBundleVersion>6.2.15</magnoliaBundleVersion>
     <javaVersion>11</javaVersion>
     <magnoliaRestVersion>2.2.5</magnoliaRestVersion>
+    <version.apache.poi>4.0.1</version.apache.poi>
+
   </properties>
 
   <!-- Fill the following in, so you can use the release plugin -->
@@ -31,6 +33,21 @@
         <version>${magnoliaBundleVersion}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>info.magnolia.form</groupId>
+        <artifactId>magnolia-form</artifactId>
+        <version>2.7.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>${version.apache.poi}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>${version.apache.poi}</version>
       </dependency>
 
       <!-- Option B -->

@@ -1,3 +1,4 @@
 templateScript: /main-templates/templates/components/listTickets.ftl
+dialog: main-templates:components/listTickets
 title: List ticket component
 renderType: freemarker

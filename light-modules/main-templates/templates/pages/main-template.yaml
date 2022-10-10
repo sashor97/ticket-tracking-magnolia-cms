@@ -4,8 +4,11 @@ title: Main template
 renderType: site
 type: home
 areas:
+  navigation:
+    templateScript: /main-templates/templates/areas/navigation.ftl
+    renderType: freemarker
   main:
-    templateScript: /main-templates/templates/components/content.ftl
+    templateScript: /main-templates/templates/areas/content.ftl
     type: list
     renderType: freemarker
     availableComponents:
@@ -15,6 +18,26 @@ areas:
         id: main-templates:components/addTicketComponent
       listTickets:
         id: main-templates:components/listTickets
+      contactUs:
+        id: form:components/form
+  loginArea:
+    type: list
+    templateScript: /main-templates/templates/areas/contentContainer.ftl
+    parameters:
+      cssClass: container
+    availableComponents:
+      login:
+        id: public-user-registration:components/login
+      registration:
+        id: public-user-registration:components/registration
+      userUpdate:
+        id: public-user-registration:components/userUpdate
+      forgottenPassword:
+        id: public-user-registration:components/forgottenPassword
+      passwordChange:
+        id: public-user-registration:components/passwordChange
+      enableUser:
+        id: public-user-registration:components/enableUser
 
 
 

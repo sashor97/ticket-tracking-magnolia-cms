@@ -3,10 +3,13 @@ form:
   properties:
     title:
       $type: textField
-      label: Title of add form
+#      label: Title of add form
+      label: dialogs.title.add.form
+      i18n: true
     button:
       $type: textField
-      label: Button text
+      label: dialogs.title.add.form
+      i18n: true
     addPrioriteties:
       $type: jcrMultiValueField
       label: Add priorities

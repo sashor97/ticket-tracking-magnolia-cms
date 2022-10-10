@@ -1,13 +1,64 @@
+title: Media page
+description:
+parameters: !override
 form:
   tabs:
     - name: tabMain
       label: Main
       fields:
-        - name: title
-          fieldType: text
-          label: Home Page Title
-actions:
-  commit:
-    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
-  cancel:
-    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+        !include:/main-templates/dialogs/pages/main-fields.yaml
+
+    - !include:/main-templates/dialogs/pages/tab-meta.yaml
+
+actions: !include /main-templates/dialogs/common/actions.yaml
+#label: Home dialog
+#form:
+#  properties:
+#    logo:
+#      class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+#      targetWorkspace: dam
+#      appName: assets
+#      identifierToPathConverter:
+#        class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+#      label: Logo
+#    navigationMenuLabel:
+#      class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+#      label: Navigation menu label
+#      description: Description
+#      rows: 1
+#      placeholder: PlaceHolder
+#    keywords:
+#      class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+#      label: Keywords
+#      description: Description
+#      rows: 5
+#      placeholder: PlaceHolder
+#    description:
+#      class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+#      label: Description
+#      description: Description
+#      rows: 5
+#      placeholder: PlaceHolder
+#      maxLength: 1000
+#    hideInMenu:
+#      class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+#      defaultValue: false
+#      type: Boolean
+#      $type: checkBoxField
+#      label: Hide in menu
+#      description: Hide in menu
+#      buttonLabel: Hide in menu
+#  layout:
+#    $type: tabbedLayout
+#    tabs:
+#      tabImage:
+#        label: Tab image
+#        fields:
+#          - name: logo
+#      tabMeta:
+#        label: Metadata
+#        fields:
+#          - name: navigationMenuLabel
+#          - name: keywords
+#          - name: description
+#          - name: hideInMenu

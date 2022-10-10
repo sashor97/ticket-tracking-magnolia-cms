@@ -1,0 +1,19 @@
+- name: title
+  class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+  i18n: true
+  label: Page title
+- name: navigationTitle
+  class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+  i18n: true
+  label: Navigation title
+- name: windowTitle
+  class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+  i18n: true
+  label: Window title
+- name: hideInNav
+  class: info.magnolia.ui.form.field.definition.CheckboxFieldDefinition
+  defaultValue: false
+  i18n: false
+  type: Boolean
+  label: Hide
+  buttonLabel: check this field to hide page in navigation

@@ -8,7 +8,23 @@ subApps:
     subAppClass: info.magnolia.ui.contentapp.browser.BrowserSubApp
     class: info.magnolia.ui.contentapp.browser.BrowserSubAppDescriptor
     label: Ticket
+    datasource:
+      name: jcr-browser
+      $type: jcrDatasource
+      workspace: ticket
+      includeProperties: true
     actions:
+      exportCSVCommand:
+        command: exportCSVCommand
+        catalog: default
+        icon: icon-file-excel
+        class: com.todo.ws.core.actions.ExportActionDefinition
+        label: Export all
+        availability:
+          writePermissionRequired: false
+          root: true
+          nodes: false
+          properties: false
       addTicket:
         subAppId: detail
         icon: icon-add-item
@@ -169,7 +185,9 @@ subApps:
                 - name: addFolder
             - name: importExportActions
               items:
+                - name: exportCSVCommand
                 - name: import
+                - name: export
           availability:
             nodes: false
             root: true
@@ -302,11 +320,13 @@ subApps:
               class: info.magnolia.ui.workbench.column.definition.MetaDataColumnDefinition
             - name: ticketName
               displayInChooseDialog: false
-              editable: true
+#              editable: true
+              enabled: false
               expandRatio: 1.0
               propertyName: ticketName
               sortable: true
               class: info.magnolia.ui.workbench.column.definition.PropertyColumnDefinition
+              label: Ticket name
             - name: status
               displayInChooseDialog: false
               formatterClass: info.magnolia.ui.workbench.column.StatusColumnFormatter
@@ -416,10 +436,14 @@ subApps:
             fields:
               - name: ticketName
                 class: info.magnolia.ui.form.field.definition.TextFieldDefinition
-                label: Ticket name
+                label: ticket.app.name
+                i18n: true
+                required: true
               - name: ticketDescription
                 class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
-                label: Ticket description
+                label: ticket.ticketDescription.label
+                i18n: true
+                required: true
               - name: priority
                 label: Select priority
                 type: String

@@ -52,21 +52,21 @@
                         [#assign dateTicket=cmsfn.metaData(ticket, "mgnl:created")!]
 
                         <div class="block font">
-                            <p class="title font-weight-bold">${ticket.ticketTitle!}</p>
-                            <p class="desc">${ticket.ticketDescription!}</p>
+                            <p class="title font-weight-bold">${i18n['components.listTicket.title']!""} ${ticket.ticketTitle!}</p>
+                            <p class="desc"><b>${i18n['components.listTicket.description']!""}:</b> ${ticket.ticketDescription!}</p>
                             <p class="theme text-uppercase font-weight-bold">
                                 [#if ticket.ticketPriority?has_content&&ticket.ticketPriority=="LOW"]
-                                    <span class="text-primary">Priority: ${ticket.ticketPriority!}</span>
+                                    <span class="text-primary">${i18n['components.listTicket.priority']!""}: ${ticket.ticketPriority!}</span>
                                 [#elseif ticket.ticketPriority?has_content&&ticket.ticketPriority=="MEDIUM"]
-                                    <span class="text-warning">Priority: ${ticket.ticketPriority!}</span>
+                                    <span class="text-warning">${i18n['components.listTicket.priority']!""}: ${ticket.ticketPriority!}</span>
                                 [#else]
-                                    <span class="text-danger">Priority: ${ticket.ticketPriority!}</span>
+                                    <span class="text-danger">${i18n['components.listTicket.priority']!""}: ${ticket.ticketPriority!}</span>
                                 [/#if]
                             </p>
                             <p class="ticketUuidParagraph"><input class="ticketUuid" type="hidden"
                                                                   value="${ticket.@uuid}"/>
                             </p>
-                            <p class="date"> ${dateTicket?substring(0,10)!}</p>
+                            <p class="date">${i18n['components.listTicket.created']!""}: ${dateTicket?substring(0,10)!}</p>
                             <p id="actionsTicket">
                                 <button onclick="changeStatusTicket(this)" data-method="post"
                                         data-api="${ctx.contextPath}/.rest/tickets/edit/complete/status?uuid=${ticket.@uuid}" [#if ticket.ticketCompleted?has_content&&ticket.ticketCompleted] style="display: none;" [/#if]

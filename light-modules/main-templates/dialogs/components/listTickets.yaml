@@ -1,0 +1,29 @@
+form:
+  tabs:
+#    - !include:/main-templates/includes/componentId.yaml
+    - name: tabMain
+      label: Main
+      fields:
+        - name: titleTicket
+          fieldType: text
+          label: components.listTicket.title
+          i18n: true
+        - name: ticketPriority
+          fieldType: text
+          label: Ticket priority
+          i18n: true
+        - name: ticketDescription
+          fieldType: text
+          label: Ticket description
+          i18n: true
+        - name: ticketCreated
+          fieldType: text
+          i18n: true
+          label: Ticket priority
+
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

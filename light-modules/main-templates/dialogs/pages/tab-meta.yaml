@@ -1,0 +1,12 @@
+name: tabMeta
+fields:
+  - name: keywords
+    class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+    i18n: true
+    rows: 3
+    label: Keywords
+  - name: description
+    class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+    i18n: true
+    rows: 5
+    label: Description
