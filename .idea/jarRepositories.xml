@@ -42,6 +42,11 @@
       <option name="url" value="https://nexus.magnolia-cms.com/content/groups/public" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="archetype" />
+      <option name="name" value="archetype" />
+      <option name="url" value="https://nexus.magnolia-cms.com/content/repositories/magnolia.public.releases" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jboss-public-repository-group" />
       <option name="name" value="JBoss Public Maven Repository Group" />
       <option name="url" value="https://repository.jboss.org/nexus/content/groups/public-jboss/" />
@@ -95,6 +100,11 @@
       <option name="id" value="magnolia.incubator.releases" />
       <option name="name" value="magnolia.incubator.releases" />
       <option name="url" value="https://nexus.magnolia-cms.com/content/repositories/magnolia.incubator.releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="vaadin-addons" />
+      <option name="name" value="vaadin-addons" />
+      <option name="url" value="https://maven.vaadin.com/vaadin-addons/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="atlassian-3rd-party" />
