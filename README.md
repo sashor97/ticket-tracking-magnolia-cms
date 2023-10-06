@@ -13,14 +13,14 @@ In IntelliJ, go to **edit configuration**, on the left side add **Tomcat Server 
 
 #### Tab Deployment
 
-![Deployment Tab](./docs/assets/intellij-0.png)
+![Deployment Tab](./docs/assets/import_artefact.png)
 
 Press [+] and add Artifact...  **todo-webapp:war exploded**.
 Change Application content to **/magnoliaAuthor**
 
 #### Tab Server
 
-![Server Tab](./docs/assets/intellij-1.png)
+![Server Tab](./docs/assets/tomcat_adjustment.png)
 
 URL: **http://localhost:8080/magnoliaLocal/**  
 VM options: **-Xmx2048M**
@@ -35,7 +35,7 @@ The following workspace are used that the site works
 
 If you want to have newer/more data, you can use the **JCR Tools** on prod servers and export it and copy it `mgnl-bootstrap-samples/todo-core`.
 
-![Deployment Tab](./docs/assets/magnolia-jcr-tools.png)
+![Deployment Tab](./docs/assets/jcr_import.png)
 
 
 Usergroups and userroles are `todo-core/src/main/resources/mgnl-bootstrap/todo-core` folder, so they dont need to be installed. User you can define your own for testing, default is superuser.
@@ -48,7 +48,6 @@ See sasho folder for example
 #### Start server
 
 If you using intellij, you can add under `View / Tool Windows / Services` the Service Tab at the bottom or start with the run on the top.
-![Services Tab](./docs/assets/intellij-2.png)
 
 Right click on Tomcat and **run**.
 
