@@ -53,6 +53,5 @@ Right click on Tomcat and **run**.
 
 The website is on http://localhost:8080/magnoliaAuthor/.magnolia/admincentral
 
-First time installation (or any fresh installation), you need to enter the license key, you find the enterprise license in the panter bitwarden (**aek/AEK Bank/Magnolia Enterprise License**).
-For new maven install
+First time installation (or any fresh installation), you need to enter the license key, please write me in DM to share license
 
